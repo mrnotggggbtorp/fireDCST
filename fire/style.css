@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+html {
+  font-size: 85px;
+  font-family:'Montserrat',sans-serif;
+  text-align:center;
+}
+a {
+    text-decoration: none;
+    text-align: center;
+}
+.container {
+  position: relative;
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.buttons {
+  position: fixed;
+  font-family: 'Montserrat';
+  color: white;
+  font-size: 1rem;
+  font-size: 69px;
+  background: linear-gradient(to right, #CCC 50%, #FF5858 50%, #CC2E5D);
+ background-size: 200%;
+ -webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+ transition: 0.3s ease-out;
+ 
+}
+.buttons:hover {
+  background-position: -100%;
+}
+.roght {
+  position: absolute;
+  font-family:'Montserrat';
+  top: 13px;
+  right: 16px;
+  font-size: 31px;
+  color: rgb(209, 4, 4);
+  padding: 15px 15px;
+  text-align: center;
+  color:red;
+  background-color: transparent;
+  border: 8px solid rgb(255, 243, 243);
+}
+.roght:hover{
+  box-shadow: inset 10000px 0 0 0 #eaf2f524;
+  color: white;
+}
+.top-right .cta{
+  position: absolute;
+  top: 37px;
+  right: 16px;
+  font-size: 25px;
+  color: rgb(209, 4, 4);
+  padding: 15px 15px;
+  text-align: center;
+  color:rgb(242, 241, 241);
+  background-color: transparent;
+  border: 12px solid rgb(166, 134, 134);
+}
+.top-right :hover {
+  color: rgb(247, 19, 19);
+  background-color: rgba(244, 244, 244, 0.953);
+}
+#hero h1 {
+  position: absolute;
+  top: -15cm;
+  left: 45px;
+  text-align: top;
+  display: inline;
+  font-size: 6rem;
+   background: linear-gradient(to right, #CCC 50%, #FF5858 50%, #CC2E5D);
+  background-size: 200%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition: 0.3s ease-out;
+}
+#hero h1:hover{
+  background-position: -100%;
+}
+/* hero section */
+#hero {
+  background-image:url(./img//fire-truck-780388.jpg) ;
+  background-size: cover ;
+  background-position:center ;
+  position: sticky;
+  backdrop-filter: rgb(43, 42, 42);
+  z-index: 2;
+  opacity: 16.5;
+  filter: contrast(180%);
+  filter: brightness(90%);
+  filter:hue-rotate(179%)
+}
+#hero .after {
+  position: absolute;
+  left: 48px;
+  top: 45px;
+  height: 100%;
+  width: 100%;
+  background-color:rgb(130, 169, 163);
+  opacity: .60;
+  z-index: -2;
+  text-align: center;
+}
+#hero .hero{
+  width: 120%;
+  margin: 0;
+  padding: 0 50px;
+  justify-content: flex-start;
+}
+#hero h1 {
+  display: block;
+  width: fit-content;
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+  color: transparent;
+  animation: text_reveal .5s ease forwards;
+  animation-delay: 1s;
+}
+#hero h1:nth-child(1){
+  animation-delay: 1s;
+}
+#hero h1:nth-child(2){
+  animation-delay: .6s;
+}
+
+#hero h1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  text-align: center;
+  background-color: rgb(255, 0, 0);
+  animation: text_reveal_box 1s ease;
+  animation-delay: .3s;
+}
+#hero h1:nth-child(1){
+  animation-delay: .5s;
+}
+#hero h1:nth-child(2){
+  animation-delay: .5s;
+}
+
+#hero .cta {
+  display: inline-block;
+  padding: 15px 15px;
+  text-align: center;
+  background: linear-gradient(to right, #CCC 50%, #FF5858 50%, #CC2E5D);
+  background-size: 200%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition: 0.3s ease-out;
+  font-size: 45px;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  transition : .3s ease ;
+  transition-property: background-color, color;
+}
+#hero .cta:hover {
+  background-position: -100%;
+
+}
+ 
+/* end hero section */
+
+
+/* keyframe */
+@keyframes text_reveal_box{
+  50%{
+    width: 100%;
+    top: 0;    
+   }
+   100%{
+     width: 0;
+     left: 100%;
+   }
+}
+@keyframes text_reveal{
+  100%{
+    color: white;
+  }
+}
